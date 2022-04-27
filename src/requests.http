@@ -1,0 +1,29 @@
+### get all employees
+GET http://localhost:3000/employees
+
+### get one employee
+GET http://localhost:3000/employees/1
+
+### create employee
+POST http://localhost:3000/employees
+content-type:application/json
+
+{
+    "name":"employee6",
+    "phone":987654326,
+    "email":"cba@gmail.com",
+    "tasks":[{"name":"task6-6"},{"name":"task7-6"}],
+    "meetings":[{"zoomUrl":"meeting7-6"},{"zoomUrl":"meeting8-6"}] 
+}
+
+### update employee
+PATCH http://localhost:3000/employees/1
+Content-Type: application/json
+
+{
+    "name":2  
+}
+
+### delete employee
+DELETE http://localhost:3000/employees/1
+
