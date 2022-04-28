@@ -2,28 +2,31 @@
 GET http://localhost:3000/employees
 
 ### get one employee
-GET http://localhost:3000/employees/1
+
+GET http://localhost:3000/employees/5
 
 ### create employee
+
 POST http://localhost:3000/employees
 content-type:application/json
 
 {
-    "name":"employee6",
-    "phone":987654326,
-    "email":"cba@gmail.com",
-    "tasks":[{"name":"task6-6"},{"name":"task7-6"}],
-    "meetings":[{"zoomUrl":"meeting7-6"},{"zoomUrl":"meeting8-6"}] 
+    "name":"employee7",
+    "phone":987654327,
+    "email":"cba7@gmail.com",
+    "tasks":[{"name":"task6-7"},{"name":"task8-7"}],
+    "meetings":[{"zoomUrl":"meeting7-7"},{"zoomUrl":"meeting9-7"}] 
 }
 
 ### update employee
-PATCH http://localhost:3000/employees/1
+
+PATCH http://localhost:3000/employees/4
 Content-Type: application/json
 
 {
-    "name":2  
+    "name":"employee4"
 }
 
 ### delete employee
-DELETE http://localhost:3000/employees/1
+DELETE http://localhost:3000/employees/4
 

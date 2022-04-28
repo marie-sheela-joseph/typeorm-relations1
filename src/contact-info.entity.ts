@@ -11,7 +11,7 @@ import { Employee } from './employee.entity';
 export class ContactInfo {
   @PrimaryGeneratedColumn()
   id: number;
-##check-git pull
+
   @Column()
   phone: number;
 

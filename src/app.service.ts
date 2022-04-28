@@ -55,7 +55,11 @@ export class AppService {
   }
 
   async getEmployee(id) {
-    return this.employeeRepo.find(id);
+    console.log(id);
+    const res = await this.employeeRepo.findOne({
+      where: { id: id },
+    });
+    return res;
   }
 
   async deleteEmployee(id) {
